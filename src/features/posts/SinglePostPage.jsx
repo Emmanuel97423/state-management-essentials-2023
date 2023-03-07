@@ -3,12 +3,10 @@ import { useSelector } from 'react-redux'
 
 export const SinglePostPage = ({ match }) => {
   const { postId } = match.params
-  console.log('postId:', postId)
 
   const post = useSelector((state) => {
-    state.posts.find((post) => post.id === postId)
+    return state.posts.find((post) => post.id === postId)
   })
-  console.log('post:', post)
 
   if (!post) {
     return (
