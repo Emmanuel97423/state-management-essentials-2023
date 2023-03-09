@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { PostAuthor } from './PostAuthor'
 
 export const SinglePostPage = ({ match }) => {
   const { postId } = match.params
@@ -19,6 +20,7 @@ export const SinglePostPage = ({ match }) => {
     <section>
       <article className="post">
         <h2>{post.title}</h2>
+        <PostAuthor userId={post.user} />
         <p className="post-content">{post.content}</p>
       </article>
     </section>
