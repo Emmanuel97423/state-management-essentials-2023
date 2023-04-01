@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { selectAllUsers } from './usersSlice'
+import { selectAllUsers, selectUserById } from './usersSlice'
 
 export const UsersList = () => {
   const users = useSelector(selectAllUsers)
