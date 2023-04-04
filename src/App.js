@@ -32,7 +32,7 @@ function App() {
             )}
           />
           <Route exact path="/posts/:postId" component={SinglePostPage} />
-          <Route exact path="/postEdit/:postId" component={EditPostForm} />
+          <Route exact path="/editPost/:postId" component={EditPostForm} />
           <Route exact path="/users" component={UsersList} />
           <Route exact path="/notifications" component={NotificationsList} />
 

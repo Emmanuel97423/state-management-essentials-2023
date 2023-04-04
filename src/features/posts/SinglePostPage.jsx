@@ -34,21 +34,4 @@ export const SinglePostPage = ({ match }) => {
   }
 
   return <section>{content}</section>
-
-  // if (!post) {
-  //   return (
-  //     <section>
-  //       <h2>Post not found</h2>
-  //     </section>
-  //   )
-  // }
-  // return (
-  //   <section>
-  //     <article className="post">
-  //       <h2>{post.title}</h2>
-  //       <PostAuthor userId={post.user} />
-  //       <p className="post-content">{post.content}</p>
-  //     </article>
-  //   </section>
-  // )
 }
